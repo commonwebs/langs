@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
-import "./styles/index";
+import styles from "./styles/index.css";
 
 export const meta: MetaFunction = () => {
   return { title: "编程语言学习笔记" };
@@ -22,6 +22,10 @@ export function links() {
     {
       rel: "stylesheet",
       href: "https://cdn.jsdelivr.net/npm/highlight.js@11.4.0/styles/idea.min.css",
+    },
+    {
+      rel: "stylesheet",
+      href: styles,
     },
   ];
 }
